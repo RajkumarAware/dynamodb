@@ -7,11 +7,11 @@ const db = CyclicDB(process.env.CYCLIC_DB)
 let users = db.collection('users')
 
 
-/* GET users listing. */
+/* GET users listing. 
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
-
+*/
 /* implement CRUD */
 router.get('/', async function(req, res, next) {
   let list = await users.list();
